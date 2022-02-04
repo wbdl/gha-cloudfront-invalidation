@@ -15,7 +15,7 @@ This Github action will find a cloudfront distribution ID from an FQDN and issue
 ## Usage
 
 ```yaml
-    - name: Login to Amazon ECR
+    - name: Invalidate Cloudfront
       id: invalidate-cloudfront
       uses: wbdl/gha-cloudfront-invalidation@master
       with:
