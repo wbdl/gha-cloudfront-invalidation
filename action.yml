@@ -1,0 +1,13 @@
+name: 'Cloudfront Invalidation'
+description: 'Find a Cloudfront distribution by domain and issue an invalidation against it.'
+inputs:
+  target-domain:
+    description: 'Alternate domain name of Cloudfront distribution to be invalidated.'
+    required: true
+  paths:
+    description: 'Comma separated list of paths to be invalidated.'
+    required: false
+    default: '*'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
