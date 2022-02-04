@@ -20,9 +20,7 @@ This Github action will find a cloudfront distribution ID from an FQDN and issue
       uses: wbdl/gha-cloudfront-invalidation@master
       with:
         target-domain: 'foo.bar.com'
-        paths:
-        - "/foo"
-        - "/bar*"
+        paths: "/foo,/bar*"
 ```
 
 ## Credentials
